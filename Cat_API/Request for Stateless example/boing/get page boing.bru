@@ -1,0 +1,15 @@
+meta {
+  name: get page boing
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:8085/boing
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvdXBpIGdvdXBpIGR1IGJvaW5nIiwiaWF0IjoxNzM5ODczMzc5LCJleHAiOjE3Mzk4NzY5NzksInJvbGVzIjpbIlJPTEVfQk9JTkciXX0.GYQUnncsoMarqMJJSjz5hzpsqe_-O5re7GfuXsYhkOiXPOm0oyovp9UKI3iTjHFqRXJwWy66CGfTweppPt1VrQ
+}

@@ -1,0 +1,26 @@
+meta {
+  name: create breed
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8085/crud/breed
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcnVkIiwiaWF0IjoxNzQxODgxODg2LCJleHAiOjE3NDE4ODU0ODYsInJvbGVzIjpbIlJPTEVfQ1JVRCJdfQ.qul-Xn3vnMLenR91yivGMiwKZMdoouS2v3O40P5RTftV588crMK1NfImhNGGKAwYCn9lNOdJWixxwkx6Z92IRw
+}
+
+body:json {
+  {
+    "id": "test",
+    "name": "Aegean",
+    "lifespan": "9 - 12",
+    "origin": "Greece",
+    "country_code": "GR",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Aegean_cat"
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: delete breed
+  type: http
+  seq: 4
+}
+
+delete {
+  url: http://localhost:8085/crud/breed?id=68
+  body: none
+  auth: bearer
+}
+
+params:query {
+  id: 68
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcnVkIiwiaWF0IjoxNzQxODgxODg2LCJleHAiOjE3NDE4ODU0ODYsInJvbGVzIjpbIlJPTEVfQ1JVRCJdfQ.qul-Xn3vnMLenR91yivGMiwKZMdoouS2v3O40P5RTftV588crMK1NfImhNGGKAwYCn9lNOdJWixxwkx6Z92IRw
+}

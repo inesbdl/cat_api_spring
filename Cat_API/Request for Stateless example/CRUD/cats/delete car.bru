@@ -1,0 +1,19 @@
+meta {
+  name: delete car
+  type: http
+  seq: 4
+}
+
+delete {
+  url: http://localhost:8085/crud/cat?id=21
+  body: none
+  auth: bearer
+}
+
+params:query {
+  id: 21
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcnVkIiwiaWF0IjoxNzQxODY0Njk1LCJleHAiOjE3NDE4NjgyOTUsInJvbGVzIjpbIlJPTEVfQ1JVRCJdfQ.xLc-jAPSVgyjGDwj4o64MpCS51IpweSI2UTWIOi-xtPeP21zDQHK0QjxUjtyKCIrN2vNLw3MBGVF6NkdTkveMQ
+}

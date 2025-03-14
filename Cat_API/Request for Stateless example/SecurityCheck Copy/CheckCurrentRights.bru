@@ -1,0 +1,15 @@
+meta {
+  name: CheckCurrentRights
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8085/test/security
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzY3JhcHBlciIsImlhdCI6MTczOTg5MzIzOCwiZXhwIjoxNzM5ODk2ODM4LCJyb2xlcyI6WyJST0xFX1NDUkFQUEVSIl19.dwZMBponoo0sLIXYWqoq4VMdyvdSlgMVPtYctQaCRSUJ1Y88iibvWGDyfvXWpgjIRc0n5DSXYxXErRRXoQHoOw
+}

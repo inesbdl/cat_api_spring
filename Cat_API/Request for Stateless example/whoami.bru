@@ -1,0 +1,15 @@
+meta {
+  name: whoami
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:8085/test/security
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcnVkIiwiaWF0IjoxNzM5ODY5MzU5LCJleHAiOjE3Mzk4NzI5NTksInJvbGVzIjpbIlJPTEVfQ1JVRCJdfQ.sHnoFSGF4ZNFNQt0WBjvwSb_nsqsHkyrh5i1vFHWJfYhdfX2nmhklqX355bOF8avydbb_XNS6YVsYWtcuHLG3A
+}

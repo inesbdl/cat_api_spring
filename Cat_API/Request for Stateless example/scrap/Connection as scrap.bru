@@ -1,0 +1,27 @@
+meta {
+  name: Connection as scrap
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8085/api/login
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{userToken}}
+}
+
+body:json {
+  {
+      "username": "scrapper",
+      "password" : "password"
+  }
+}
+
+tests {
+  var jsonData = res.getBody();
+  bru.setEnvVar("userToken", jsonData.token);
+}

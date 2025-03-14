@@ -1,0 +1,29 @@
+meta {
+  name: update car
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:8085/crud/cat?id=22
+  body: json
+  auth: bearer
+}
+
+params:query {
+  id: 22
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcnVkIiwiaWF0IjoxNzQxODY3OTA2LCJleHAiOjE3NDE4NzE1MDYsInJvbGVzIjpbIlJPTEVfQ1JVRCJdfQ.-BomKVd2jcKFW1XfiLTCxsAn2jRrUJMZllCS03IslqttkiuchkqoAkBicbSNeaEuIOH16RnIPw7_PLJFgiKHvA
+}
+
+body:json {
+  {
+    "id" : "aaaa",
+    "url" : "https://picsuuuuuuuuuuum.photos/200/",
+    "width" : 200,
+    "height" : 150,
+    "breeds" : []
+  }
+}

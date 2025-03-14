@@ -1,0 +1,19 @@
+meta {
+  name: cats race
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8085/boing/cats/race?race=abys
+  body: none
+  auth: bearer
+}
+
+params:query {
+  race: abys
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvdXBpIGdvdXBpIGR1IGJvaW5nIiwiaWF0IjoxNzM5ODc3MTgyLCJleHAiOjE3Mzk4ODA3ODIsInJvbGVzIjpbIlJPTEVfQk9JTkciXX0.IX1nIIQajAgmSt2Yxya_NY9CdvxtKlsrJ29tlfanGH4vxcver6lQSbctPvveasHfUsXOLmF5Th_RWl5dIFQ1_g
+}

@@ -1,0 +1,15 @@
+meta {
+  name: get all cars
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8085/crud/cats
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcnVkIiwiaWF0IjoxNzQxODYyMDQ2LCJleHAiOjE3NDE4NjU2NDYsInJvbGVzIjpbIlJPTEVfQ1JVRCJdfQ.MDrohwYrVC-yzvaWZQd4SL7HAa_tzi7IBNB2mCu_jyuwvTgikD3rxFt3ICHWJM4x6DDkaXsL_Ppq-SsMfqWFJw
+}

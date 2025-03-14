@@ -1,0 +1,25 @@
+meta {
+  name: create car
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8085/crud/cat
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcnVkIiwiaWF0IjoxNzQxODY3OTA2LCJleHAiOjE3NDE4NzE1MDYsInJvbGVzIjpbIlJPTEVfQ1JVRCJdfQ.-BomKVd2jcKFW1XfiLTCxsAn2jRrUJMZllCS03IslqttkiuchkqoAkBicbSNeaEuIOH16RnIPw7_PLJFgiKHvA
+}
+
+body:json {
+  {
+    "id" : "sdfghj",
+    "url" : "https://picsum.photos/200/",
+    "width" : 200,
+    "height" : 200,
+    "breeds" : []
+  }
+}

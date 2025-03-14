@@ -1,0 +1,15 @@
+meta {
+  name: get all breeds
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8085/crud/breeds
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcnVkIiwiaWF0IjoxNzQxODgxODg2LCJleHAiOjE3NDE4ODU0ODYsInJvbGVzIjpbIlJPTEVfQ1JVRCJdfQ.qul-Xn3vnMLenR91yivGMiwKZMdoouS2v3O40P5RTftV588crMK1NfImhNGGKAwYCn9lNOdJWixxwkx6Z92IRw
+}

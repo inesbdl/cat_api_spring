@@ -1,0 +1,23 @@
+meta {
+  name: Connection as boing
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8085/api/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "username": "boing",
+      "password" : "password"
+  }
+}
+
+tests {
+  var jsonData = res.getBody();
+  bru.setEnvVar("userToken", jsonData.token);
+}

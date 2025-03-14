@@ -1,0 +1,22 @@
+meta {
+  name: Get page crud
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8085/crud
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcnVkIiwiaWF0IjoxNzM5ODczMDkzLCJleHAiOjE3Mzk4NzY2OTMsInJvbGVzIjpbIlJPTEVfQ1JVRCJdfQ.s4tyeBFbfapRdsEUftRr_02Sn6Qs89cJ8J8L_WNywOcqdY8G544viEz6xAKAqK0GcwDaQH9_-VxFEjMiYr3RAg
+}
+
+body:json {
+  {
+      "username": "admin1",
+      "password" : "password"
+  }
+}
