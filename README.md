@@ -5,6 +5,8 @@
 
 ### Mettre les variables d'environnement
 
+Créer un fichier **application.properties** en se basant sur **application.example**
+
 Dans **application.properties** modifier : 
 - spring.datasource.url=jdbc:mysql://localhost:port/nom_de_la_database
 - spring.datasource.username=your_username
@@ -23,5 +25,5 @@ Créer un schéma ayant le même nom que celui dans **application.properties**
 
 ### Importer les routes
 
-Importer les routes dans Bruno
-Avant de tester les routes, bien penser à s'authentifier
+Importer les routes dans Bruno.
+Avant de tester les routes, bien penser à s'authentifier.
