@@ -1,6 +1,6 @@
 ### Récupérer le projet
 
-- Cloner le projet avec `git clone https://github.com/inesbdl/spring_api.git`
+- Cloner le projet avec `git clone https://github.com/inesbdl/cat_api_spring.git`
 - Ouvrir le projet 
 
 ### Mettre les variables d'environnement
