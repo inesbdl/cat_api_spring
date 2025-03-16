@@ -11,6 +11,7 @@ Dans **application.properties** modifier :
 - spring.datasource.url=jdbc:mysql://localhost:port/nom_de_la_database
 - spring.datasource.username=your_username
 - spring.datasource.password=your_password
+- jwt.secret=clé_aléatoire_au_moins_64_caractères
 
 Et ajouter les variables de l'api source : 
 - API_SCHEME=https
