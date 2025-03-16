@@ -25,5 +25,5 @@ Créer un schéma ayant le même nom que celui dans **application.properties**
 
 ### Importer les routes
 
-Importer les routes dans Bruno.
+Importer les routes dans Bruno. Les routes sont dans `cat_api_spring\Cat_API\Request Cat API`
 Avant de tester les routes, bien penser à s'authentifier.
